@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.IndexCardsController">
+   <top>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle fill="#1a6c75" height="49.0" smooth="false" stroke="TRANSPARENT" strokeType="INSIDE" width="700.0" />
+            <Text fill="WHITE" layoutX="201.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30;" text="Your Index Cards" textAlignment="CENTER" wrappingWidth="298.9830837249756" />
+            <Button fx:id="renameBtn" layoutX="29.0" layoutY="10.0" mnemonicParsing="false" onAction="#renameCourse" text="Rename" />
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="49.0" prefWidth="617.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle fill="#1a6c75" height="49.0" smooth="false" stroke="TRANSPARENT" strokeType="INSIDE" width="700.0" />
+            <Button fx:id="toCoursesBtn" layoutX="574.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToCourses" onMouseEntered="#changeToCoursesBtnColor" onMouseExited="#revertToCoursesBtnColor" prefHeight="27.0" prefWidth="112.0" style="-fx-background-color: #F9FEB5;" text="Back to Course" />
+            <Button fx:id="deleteBtn" layoutX="29.0" layoutY="11.0" mnemonicParsing="false" onAction="#deleteCourse" text="Delete Course" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <AnchorPane prefHeight="402.0" prefWidth="139.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="27.0" layoutY="85.0" mnemonicParsing="false" prefHeight="231.0" prefWidth="91.0" style="-fx-background-color: #1a6c75;" text="Click here to Create a Index Card" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+         </children></AnchorPane>
+   </left>
+   <center>
+      <ScrollPane prefHeight="402.0" prefWidth="548.0" BorderPane.alignment="CENTER">
+         <content>
+            <HBox prefHeight="402.0" prefWidth="540.0" />
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
